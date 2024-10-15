@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20220919/pngtree-dark-sky-with-storm-clouds-climate-weather-background-photo-image_25427410.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    color: #fafafadc;
+}
+.weather-info {
+    margin-bottom: 20px;
+    background-color: #2b2424c7; 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 249, 249, 0.1);
+    transition: all 0.3s ease;
+}
+.weather-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.weather-info h2 {
+    color: #ced8e1;
+    margin-bottom: 15px;
+}
+.weather-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.weather-info h2::before,
+.weather-info p::before {
+    margin-right: 8px;
+}
+.weather-info h2::before { content: '☀️'; }
+.weather-info p:nth-child(2)::before { content: '🌡️'; }
+.weather-info p:nth-child(3)::before { content: '🌤️'; }
+.weather-info p:nth-child(4)::before { content: '💨'; }
+.weather-info p:nth-child(5)::before { content: '💧'; }
+.forecast {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.day {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 140px;
+    background-color: rgba(27, 27, 73, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.day:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.day button {
+    background-color: rgba(67, 64, 253, 0.9);
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.day button:hover {
+    background-color: rgba(70, 67, 248, 0.9);
+}
+#weather-forecast > div:last-child {
+    background-color: rgba(27, 27, 73, 0.9);
+    color: #fafafadc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+#weather-forecast > div:last-child:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
